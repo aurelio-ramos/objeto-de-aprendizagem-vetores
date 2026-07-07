@@ -409,7 +409,7 @@ function simulatorThreeHtml() {
       <div class="button-row">
         <button class="btn" id="calculateStats" type="button">Calcular</button>
       </div>
-      <p class="small-tip"></p>
+      
       <div id="statsVector" class="vector-boxes" aria-live="polite"></div>
       <div id="statsResult" class="stats-grid" aria-live="polite"></div>
     </section>
