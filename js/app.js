@@ -314,7 +314,7 @@ function simulatorOneHtml() {
       <div class="module-card__header">
         <div>
           <p class="eyebrow">Simulador 1 • Depois do Módulo 3</p>
-          <h3 id="sim-armario-titulo">Armário de vetor</h3>
+          <h3 id="sim-armario-titulo">Criando Vetores</h3>
         </div>
         <a class="top-link" href="#roteiro">voltar ao roteiro</a>
       </div>
