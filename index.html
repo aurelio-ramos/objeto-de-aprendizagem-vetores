@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vetores | Objeto de Aprendizagem</title>
+  <meta name="description" content="Objeto de Aprendizagem para estudantes do Curso Técnico em informática aprenderem vetores." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="container topbar__inner">
+      <div>
+        <p class="eyebrow">Objeto de Aprendizagem •</p>
+        <h1>Vetores</h1>
+        <p class="subtitle">Aprenda a organizar vários dados em uma única variável, usando exemplos concretos, atividades e simuladores visuais.</p>         
+        <p class="subtitle"><strong>Público-alvo: </strong>  Estudantes do curso Técnico em informática.</p>    
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Navegação principal">
+    <div class="container main-nav__inner">
+      <a id="navInicio" href="#inicio" aria-label="Início"><span class="home-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+</svg>
+</span><span class="visually-hidden">Roteiro</span></a>
+      <button id="openRouteMenu" class="nav-burger" type="button" aria-expanded="false" aria-controls="routeDrawer">
+        <span class="nav-burger__icon" aria-hidden="true"></span>
+        <span>Roteiro</span>
+      </button>
+      <a id="navModulos" href="#modulos">Início</a>
+      <a id="navSintese" href="#sintese">Síntese</a>
+      <a id="navAvaliacao" href="#avaliacao">Avaliação Final</a>
+    </div>
+  </nav>
+
+  <div id="routeDrawerOverlay" class="drawer-overlay" hidden></div>
+  <aside id="routeDrawer" class="side-drawer" aria-hidden="true" aria-labelledby="routeDrawerTitle">
+    <div class="side-drawer__header">
+      <div>
+        <p class="eyebrow">Roteiro do estudo</p>
+        <h2 id="routeDrawerTitle">Módulos</h2>
+      </div>
+      <button id="closeRouteMenu" class="drawer-close" type="button" aria-label="Fechar menu lateral">×</button>
+    </div>
+    <p class="side-drawer__intro">Use o roteiro para ir direto ao conteúdo que deseja revisar.</p>
+    <nav id="routeLinksDrawer" class="drawer-route-list" aria-label="Roteiro lateral"></nav>
+  </aside>
+
+  <main id="conteudo">
+    <section id="inicio" class="section section--hero">
+      <div class="container grid-2">
+        <article class="card card--large">
+          <p class="eyebrow">Situação-problema inicial</p>
+          <h2>Imagine que você precisa guardar as notas de 5 estudantes</h2>
+          <p>Sem vetor, você poderia criar várias variáveis: <code>nota1</code>, <code>nota2</code>, <code>nota3</code>, <code>nota4</code> e <code>nota5</code>.</p>
+          <p>Mas e se fossem 30 estudantes? E se fossem 100 produtos de uma loja? E se fossem as temperaturas de todos os dias do mês?</p>
+          <p>Criar uma variável para cada valor ficaria trabalhoso e confuso. Para resolver esse tipo de problema, usamos <strong>vetores</strong>.</p>
+          <div class="compare">
+            <div>
+              <h3>Sem vetor</h3>
+              <p><small>você precisa criar muitas variáveis, uma para cada novo valor.</small></p>
+              <pre><code>nota1 ← 7.0
+nota2 ← 8.5
+nota3 ← 6.0
+nota4 ← 9.0</code></pre>
+            </div>
+            <div>
+              <h3>Com vetor</h3>
+              <p><small>você precisa criar apenas uma variável, que pode guardar de forma organizada muitos valores.</small></p>
+              <pre><code>notas[0] ← 7.0
+notas[1] ← 8.5
+notas[2] ← 6.0
+notas[3] ← 9.0</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <aside class="card learning-cycle" aria-labelledby="como-usar-titulo">
+          <h2 id="como-usar-titulo">Como estudar este material</h2>
+          <ol>
+            <li>Leia a explicação de cada módulo.</li>
+            <li>Observe as tabelas e exemplos visuais.</li>
+            <li>Analise o código com calma.</li>
+            <li>Resolva a atividade de reforço.</li>
+            <li>Use o simulador final para testar índices e conteúdos.</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--light" aria-labelledby="objetivos-titulo">
+      <div class="container">
+        <p class="eyebrow">Objetivos de aprendizagem</p>
+        <h2 id="objetivos-titulo">Ao final, você deverá ser capaz de...</h2>
+        <div class="objectives" id="objectivesList"></div>
+      </div>
+    </section>
+
+    <section id="roteiro" class="section" aria-labelledby="roteiro-titulo">
+      <div class="container">
+        <p class="eyebrow">Roteiro navegável</p>
+        <h2 id="roteiro-titulo">Acesse diretamente cada módulo</h2>
+        <p class="section-intro">Siga a sequência para aprender aos poucos ou clique no módulo que deseja revisar.</p>
+        <div id="routeLinks" class="route-grid"></div>
+      </div>
+    </section>
+
+    <section id="modulos" class="section section--light" aria-labelledby="modulos-titulo">
+      <div class="container">
+        <p class="eyebrow">Conteúdo e atividades</p>
+        <h2 id="modulos-titulo">Inicie aqui seu aprendizado sobre Vetores</h2>
+        <p class="section-intro">Em cada módulo tente entender o conceito relacionado ao Vetor e sua utilização em um programa</p>
+        <div id="modulesList" class="module-stack"></div>
+      </div>
+    </section>
+
+    <section id="sintese" class="section" aria-labelledby="sintese-titulo">
+      <div class="container">
+        <p class="eyebrow">Síntese do conteúdo</p>
+        <h2 id="sintese-titulo">O que aprendemos?</h2>
+        <div id="synthesisTable" class="table-wrap"></div>
+      </div>
+    </section>
+
+    <section id="avaliacao" class="section section--light" aria-labelledby="avaliacao-titulo">
+      <div class="container">
+        <p class="eyebrow">Atividade avaliativa final</p>
+        <h2 id="avaliacao-titulo">Questionário final — Show do Milhão do Vetor</h2>
+        <p class="section-intro">Responda 7 perguntas sobre vetores. A cada resposta correta, você ganha milho e pipocas. No final, confira sua pontuação total.</p>
+        <div class="quiz-layout">
+          <article class="card millionaire-panel millionaire-panel--score">
+            <h3>Painel de prêmios</h3>
+            <div class="millionaire-score-grid">
+              <div class="millionaire-score-card">
+                <span>Pergunta atual</span>
+                <strong id="quizStep">1 / 7</strong>
+              </div>
+              <div class="millionaire-score-card">
+                <span>🌽 Milho acumulado</span>
+                <strong id="quizMilho">0</strong>
+              </div>
+              <div class="millionaire-score-card">
+                <span>🍿 Pipocas acumuladas</span>
+                <strong id="quizPipoca">0</strong>
+              </div>
+              <div class="millionaire-score-card">
+                <span>🎁 Prêmio da rodada</span>
+                <strong id="quizRoundPrize">🌽 10 milho • 🍿 1 pipoca</strong>
+              </div>
+            </div>
+            <div class="millionaire-progress" aria-hidden="true">
+              <div id="quizProgressBar" class="millionaire-progress__bar"></div>
+            </div>
+            <p id="quizStatus" class="small-tip">Selecione uma alternativa e clique em responder.</p>
+          </article>
+
+          <article class="card millionaire-panel millionaire-panel--game">
+            <p class="eyebrow">Pergunta do momento</p>
+            <h3 id="quizQuestion">Carregando pergunta...</h3>
+            <form id="quizForm" class="millionaire-options"></form>
+            <div class="button-row">
+              <button class="btn" id="submitQuizAnswer" type="button">Responder</button>
+              <button class="btn btn--secondary" id="nextQuizQuestion" type="button" hidden>Próxima pergunta</button>
+              <button class="btn btn--ghost" id="restartQuiz" type="button">Reiniciar</button>
+            </div>
+            <p id="quizFeedback" class="feedback" aria-live="polite">Leia com calma e escolha a melhor alternativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Objeto de Aprendizagem — Vetores</p>
+      <a class="github-icon" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.25 9.25 0 0 1 12 6.9c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92v2.85c0 .28.18.6.69.5A10.08 10.08 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
