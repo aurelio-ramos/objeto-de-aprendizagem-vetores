@@ -701,10 +701,7 @@ function renderVectorActionCode(action = "initial", details = {}) {
       hint: `A ação cria um vetor chamado valores com índices de 0 até ${lastIndex}.`,
       lines: [
         "// Botão: Criar vetor",
-        `valores : vetor[0..${lastIndex}] de real`,
-        "para i de 0 até " + lastIndex + " faça",
-        "   valores[i] ← 0",
-        "fimpara"
+        `valores : vetor[0..${lastIndex}] de real`        
       ]
     },
     store: {
@@ -713,8 +710,7 @@ function renderVectorActionCode(action = "initial", details = {}) {
         "// Botão: Guardar valor",
         `indice ← ${index}`,
         `conteudo ← ${portugolLiteral(value)}`,
-        "valores[indice] ← conteudo",
-        `escreva("Valor guardado em valores[${index}]")`
+        "valores[indice] ← conteudo"
       ]
     },
     read: {
